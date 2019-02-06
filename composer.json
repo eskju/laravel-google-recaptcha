@@ -1,0 +1,30 @@
+{
+    "name": "eskju/laravel-google-recaptcha",
+    "description": "A Laravel package for banning bots from your forms",
+    "keywords": ["laravel", "google", "recaptcha", "captcha", "bots", "forms"],
+    "authors": [
+        {
+            "name": "Christian Witte",
+            "email": "info@sq-webdesign.de"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "~5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eskju\\GoogleRecaptcha\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "frameworks": ["Laravel 5.5"],
+        "laravel": {
+            "providers": [
+                "Eskju\\GoogleRecaptcha\\GoogleRecaptchaServiceProvider"
+            ]
+        }
+    }
+}
